@@ -3,7 +3,7 @@ import logo from "./youtube logo.png";
 import user from "./user icon.png";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleMenu } from "../utils/appSlice";
-import { Link } from "react-router-dom";
+import { Link ,NavLink} from "react-router-dom";
 import { YOUTUBE_SEARCH_API } from "../utils/constant";
 import { cacheResults } from "../utils/searchSlice";
 const Head = () => {
@@ -56,9 +56,9 @@ const Head = () => {
           alt="menu"
           src="https://cdn.iconscout.com/icon/free/png-512/free-hamburger-menu-462145.png?f=webp&w=256"
         />
-        <Link to={'/'}>
+      <NavLink to='/'>
         <img className="h-8" alt="youtube-logo" src={logo} />
-        </Link>
+        </NavLink>
       </div>
       <div className="col-span-10 text-center">
         <div>
