@@ -56,7 +56,9 @@ const Head = () => {
           alt="menu"
           src="https://cdn.iconscout.com/icon/free/png-512/free-hamburger-menu-462145.png?f=webp&w=256"
         />
+        <Link to={'/'}>
         <img className="h-8" alt="youtube-logo" src={logo} />
+        </Link>
       </div>
       <div className="col-span-10 text-center">
         <div>
